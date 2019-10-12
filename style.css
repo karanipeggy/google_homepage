@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px 32px;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    height: 96px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    flex: 1;
+}
+
+.footer-item:first-child {
+    border-top: 1px dotted #cccccc;
+    border-bottom: 1px dotted #cccccc;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul > li {
+    margin-left: 16px;
+    color: #555555;
+}
+
+ul > li:first-child {
+    margin-left: 0px;
+}
+
+ul > li > a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+} 
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #444444;
+    min-width: 192px;
+    font-weight: 400;
+}
+
+.btn-light {
+    background-color: #eeeeee;
+}
+
+.btn-light:hover {
+    border: 1px solid #dddddd;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+input {
+    width: 32%;
+    min-width: 600px;
+}
+
+input[type=text] {
+    padding: 14px;
+    border-radius: 24px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    background-image: url('images/search-solid.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    color: #555555;
+}
+
+input[type=text]:focus {
+    border-color: #dddddd;
+    box-shadow: 0 0 8px #dddddd;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#profile {
+    border-radius: 100%;
+}
